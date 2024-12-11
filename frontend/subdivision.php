@@ -1,3 +1,5 @@
+<?php include ("/xamppp/htdocs/se2/backend/backend.php"); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
