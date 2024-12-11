@@ -1,0 +1,1055 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* =============== GLOBAL USE =============== */
+:root{
+
+    --main-bg-color: #aed6f1;
+    --main-menu-color: #f5b041; 
+    --main-button-color: #33d7ff;
+    --main-border-color: #fef533;
+    --first-gradient: linear-gradient(to right, #33d7ff, #ffffff);
+
+    /* COLORS */
+    --main-white: hsl(0, 0%, 100%);
+    
+
+    /* global items for text */
+    --main-font: "Bebas Neue", sans-serif ;
+    --main-text-color:#000000;
+    --main-weight: bold;
+
+
+
+
+    /* color for transition */
+    --first-color: hsl(18, 95%, 55%); 
+
+
+    /* INDEX */
+    --z-index: 100;
+
+
+}
+
+
+/* =============== BASE =============== */
+html {
+    scroll-behavior: smooth;
+  }
+
+
+header{
+
+    position: absolute;
+    font-family: var(--main-font);
+    font-size: 50px;
+    font-weight: var(--main-weight);
+    color: var(--main-text-color);
+    padding: 10px;
+    margin: 15px;
+    z-index: var(--z-index);
+    top: -4px;
+    left: 40px;
+
+}
+
+h2{
+
+    position: relative;
+    display: flex;
+    top: 10px;
+    left: 390px;
+    z-index: var(--z-index);
+    font-family: var(--main-text-color);
+    font-weight: var(--main-weight);
+    font-size: 40px;
+    padding: 10px;
+    margin: 15px;
+    color: var(--main-text-color);
+
+}
+
+h3{
+
+    position: relative;
+    display: flex;
+    z-index: var(--z-index);
+    font-family: var(--main-font);
+    font-weight: var(--main-weight);
+    font-size: 12px;
+    color: #000000;
+    padding: 10px;
+    margin: 15px;
+    top: 6px;
+    left: 31px;
+
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+a{
+    text-decoration: none;
+  }
+
+
+
+
+/* =============== IMAGE LIST =============== */
+
+.image__list{
+
+    position: fixed;
+    top: 75px;
+    left: -40px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+
+}
+
+.input__box{
+
+    border: #000000, fill;
+    border-width: 2px;
+    border-radius: 15px;
+    padding: 10px, 10px;
+    max-width: 400px;
+    font-size: 15px;
+    font-weight: var(--main-weight);
+    color: #000000;
+    padding: 8px;
+
+
+}
+
+
+
+
+
+
+
+
+/* =============== MULTIPLE USED DESIGN =============== */
+
+.button {
+
+    display: inline-flex; 
+    color: var(--main-text-color);
+    font-weight: var(--main-weight);
+    border: 2px solid var(--main-text-color);
+    border-radius: 7px;
+    padding: 2px;
+    transition: box-shadow 0.3s;
+    z-index: var(--z-index);
+}
+
+.button:hover {
+    box-shadow: 0 8px 32px hsla(0, 0%, 100%, 1);
+}
+
+
+.login-input{
+
+    font-family: var(--main-font);
+    font-weight: var(--main-weight);
+    color: #ffffff;
+    position: center;
+    font-size: 16px;
+    padding: 3px;
+
+}
+
+/* =============== ERROR MESSAGES =============== */
+
+error {
+    background-color: #f8d7da; /* Light red background */
+    color: #721c24; /* Dark red text color */
+    border: 1px solid #f5c6cb; /* Red border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px 20px; /* Inner spacing */
+    font-size: 16px; /* Font size */
+    margin: 20px 0; /* Margin around the message */
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center vertically */
+}
+
+.error-message .icon {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.error-message .button {
+    margin-left: auto; /* Push button to the right */
+    background-color: #ff6b6b; /* Red background for button */
+    color: white; /* White text for button */
+    border: 2px solid #ff4757; /* Darker red border */
+}
+
+/* Button hover effect */
+.error-message .button:hover {
+    background-color: #ff4757; /* Darker red on hover */
+    transform: scale(1.05); /* Slight scale effect */
+}
+
+
+
+/* =============== ICONS (NO FUNCTIONS) =============== */
+.icons {
+
+    font-size: 25px;
+
+
+}
+
+
+
+
+/* =============== HOME NAVS =============== */
+
+.nav {
+
+    position: fixed;
+    font-family: var(--main-font);
+    bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 1.5px;
+    align-items: center;
+
+}
+
+
+.nav__list {
+
+    position: absolute;
+    font-family: var(--main-font);
+    z-index: var(--z-index);
+    display: flex;
+    gap: 25px;
+    padding: 10px;
+    margin: 15px;
+    top: 8px;
+    left: 700px;
+
+
+}
+
+.nav__list span{
+    font-size: 25px;
+    font-weight: var(--main-weight);
+    color: white;
+    transition: 0.4s;
+
+}
+
+.nav__link{
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--main-text-color);
+    transition: 0.4s;
+
+}
+
+.nav__link:hover{
+    color: white;
+
+}
+
+.nav__close,
+.nav__toggle{
+
+    left: 0;
+    font-size: 25px;
+    color: var(--main-text-color);
+    cursor: pointer;
+    transition: color .4s;
+
+
+}
+
+
+.nav__menu{
+
+    position: absolute;
+    background-color: var(--main-bg-color);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    padding: 7.5rem, 3.5rem;
+    border-bottom: 2px solid var(--main-border-color);
+    border-width: 8px;
+    transition: left .4s; 
+}
+
+/* JS */
+.show__menu{
+    left: 0;
+}
+
+/* =============== LOG IN =============== */
+
+.login-text{
+
+    position: relative;
+    left: 145px;
+    font-size: 25px;
+
+}
+
+
+.login{
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-bg-color);
+    border: 3px solid #000000;
+    border-width: 2px;
+    border-radius: 15px;
+    border-bottom: 20%;
+    padding: 10px;
+    max-width: 400px;
+    margin: 20px, 40px;
+    top: 50px;
+    left: 400px;
+    gap: 8px;
+    z-index: var(--z-index);
+
+}
+
+.login-buttons{
+
+    position: relative;
+    left: 120px;
+    display: flex;
+    gap: 25px;
+
+
+}
+
+.signup_bg1 {
+
+    position: absolute;
+    background-color: var(--main-bg-color);
+    padding: 10px;
+    margin: 20px 40px;
+    width: 50%;
+    height: 130%;
+    top: 55px;
+    left: -40px;
+
+}
+
+.signup_bg2 {
+
+    position: absolute;
+    background-color:  #21618c;
+    padding: 10px;
+    margin: 20px 40px;
+    width: 50%;
+    height: 130%;
+    top: 55px;
+    right: -25px;
+    z-index: var(--z-index);
+
+}
+
+.signup_main{
+
+    position: relative;
+    display: flex;
+    background-color: #21618c;
+    flex-direction: column;
+    border: 3px solid #fef533;
+    margin: 15px;
+    border-radius: 15px;
+    padding: 15px;
+    max-width: 400px;
+    font-weight: var(--main-weight);
+    font-family: var(--main-font);
+    font-size: 19px;
+    gap: 10px;
+    top: 50px;
+    left: 90px;
+
+
+}
+
+.signup_informations{
+
+    position: relative;
+    display: flex;
+    background-color: var(--main-bg-color);
+    flex-direction: column;
+    border: 3px solid #fef533;
+    margin: 15px;
+    border-radius: 15px;
+    padding: 15px;
+    max-width: 400px;
+    font-weight: var(--main-weight);
+    font-family: var(--main-font);
+    font-size: 19px;
+    gap: 6px;
+    top: 50px;
+    right: 6px;
+    z-index: var(--z-index);
+}
+
+
+.signupbg{
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-bg-color);
+    top: -15px;
+    left: -15px;
+    width: 100%;
+    height: 15%;
+    padding: 7.5rem, 3.5rem;
+    border-bottom: 2px solid var(--main-border-color);
+    border-width: 8px;
+    max-width: 1400px;
+
+}
+
+.signup_info_bg{
+
+    background-color: #ffffff;
+    max-width: fit-content;
+    border: 1px solid #000000;
+    border-radius: 5px;
+
+}
+
+.signup-buttons{
+
+    position: relative;
+    left: 140px;
+    display: flex;
+    gap: 25px;
+
+}
+
+
+
+.signup-return{
+
+
+    position: relative;
+    left: 850px;
+}
+
+
+/* =============== ACCOUNT INFO =============== */
+
+.account_main_bg{
+
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    left: -200px;
+    top: -6px;
+}
+
+.account_option{
+
+    position: absolute;
+    background-color: grey;
+    display: flex;
+    height: 200%;
+    width: 100px;
+    top: 5px;
+    left: 200px;
+    z-index: var(--z-index);
+    padding: 8px;
+    gap: 15px;
+    margin-bottom: 16px;
+    
+
+}
+
+.option_icons{
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 20px;
+    color: #ffffff;
+    font-family: var(--main-font);
+    font-weight: var(--main-weight);
+    font-size: 15px;
+    top: 90px;
+    left: 11px;
+
+}
+
+/* =============== USER CONCERN =============== */
+
+.concern {
+    position: absolute;
+    top: 100px;
+    left: -1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+    z-index: 105;
+    border: 4px solid #000000;
+    background-color: var(--main-bg-color);
+    border-radius: 19px;
+    align-items: center;
+}
+.concern_font{
+
+    font-style: var(--main-font);
+    font-weight: var(--main-weight);
+    font-size: 25px;
+
+}
+
+.concern_button{
+
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    align-items: center;
+
+}
+
+#button{
+
+    background-color: white;
+
+}
+
+/* =============== IN SETTINGS FOR VERIFICATION (NAME, BDAY, ETC) =============== */
+.user_info{
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    top: 20px;
+    left: 200px;
+
+}
+
+.user_info_bg{
+
+    position: absolute;
+    border: 2px solid #fef533;
+    border-radius: 5px;
+    background-color: #967BB6;
+    width: 100%;
+    height: 100%;
+    top: 10px;
+    left: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+}
+
+
+/* =============== SEARCH BAR IN ACCOUNT =============== */
+
+.searchbar_bg{
+
+    position: absolute;
+    top: 5px;
+    left: 300px;
+    width: 120%;
+    height: 60px;
+    display: flex;
+    gap: 30px;
+    background-color: #99a3a4;
+    padding-top: 5px;
+    z-index: var(--z-index);
+
+}
+
+.searchbar_bg_details{
+
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    align-items: center ;
+    width: 100%;
+    top: 5px;
+    left: 440px;
+    
+
+
+
+}
+
+
+
+
+/* =============== INFORMATION HTML =============== */
+
+.info_bg{
+
+    background-color: var(--main-bg-color);
+    width: 100%;
+    height: 80%;
+
+}
+
+.missionvissionfont{
+
+    font-family: var(--main-font);
+    font-weight: var(--main-weight);
+    font-size: 50px;
+    justify-content: center;
+    text-align: justify;
+
+    
+
+}
+
+
+.missionvissiontexts{
+
+    position: absolute;
+    display: flex;
+    top: 150px;
+    left: 200px;
+    z-index: var(--z-index);
+    gap: 40px;
+   
+}
+
+.missionbox{
+
+    position: relative;
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 100%;
+    z-index: var(--z-index);
+    align-items: center;
+    border: 5px solid #000000;
+    border-radius: 15px ;
+    padding: 10px
+
+}
+
+.missionvissionparagraphfont{
+
+    font-family: var(--main-font);
+    font-weight: var(--main-weight);
+    font-size: 12px;
+    justify-content: center;
+    text-align: justify;
+
+}
+
+.visionbox{
+
+
+    position: relative;
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 100%;
+    z-index: var(--z-index);
+    align-items: center;
+    border: 5px solid #000000;
+    border-radius: 15px ;
+    padding: 10px
+
+}
+
+/* =============== MAP IN ACCOUNT =============== */
+
+.map{
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    top: 100px;
+    left: 200px;
+    overflow: auto;
+    max-width: 1300px;
+    max-height: 1000px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.houses_apartments{
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    z-index: var(--z-index);
+
+}
+
+.house_aparment_designs{
+
+
+    background-color: #aed6f1;
+    padding: 25px;
+    border-radius: 5px;
+    justify-content: center;
+    font-family: var(--main-font);
+    font-size: 15px;
+
+}
+
+
+/* =============== ACCOUNT VALIDATION HTML =============== */
+
+.accvalid_bg{
+
+    position: absolute;
+    background-color: var(--main-bg-color);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    padding: 7.5rem, 3.5rem;
+    border-bottom: 2px solid var(--main-border-color);
+    border-width: 8px;
+    width: 100%;  
+
+}
+
+.accvalid_info{
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    top: 30px;
+    left: 105px;
+    font-family: var(--main-font);
+    font-size: 15px;
+    border: 4px solid #000000;
+    padding: 15px;
+    max-width: 400px;
+    max-height: 600px;
+    border-radius: 12px;
+
+
+}
+
+.validation_button{
+
+    position: relative;
+    display: flex;
+    top: 50px;
+    left: 230px;
+    gap: 10px;
+}
+
+/* =============== SYSTEM INFO  =============== */
+
+.systeminfo_title{
+
+    position: absolute;
+    z-index: var(--z-index);
+    top: -27px;
+    left: 480px;
+    font-size: 50px;
+    font-weight: var(--main-weight);
+    font-family: var(--main-font);
+
+}
+
+.systeminfo_back{
+
+    position: relative;
+    z-index: var(--z-index);
+    top: 100px;
+    left: 1100px;
+    
+
+}
+
+
+/* =============== USERINFO HTML =============== */
+
+
+.userinfo_title{
+
+    position: relative;
+    z-index: var(--z-index);
+    top: -27px;
+    left: 477px;
+    font-size: 50px;
+    font-weight: var(--main-weight);
+    font-family: var(--main-font);
+
+}
+
+.userinfo_bg {
+
+    position: absolute; 
+    background-color: var(--main-bg-color);
+    top: -8px;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    padding: 7.5rem, 3.5rem;
+    border-bottom: 2px solid var(--main-border-color);
+    border-width: 8px;
+    width: 100%;  
+}
+
+.userinfo_design{
+
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 100px;
+    left: 100px;
+    gap: 6px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    max-width: 800;
+    z-index: var(--z-index);
+    padding: 15px;
+    background-color: var(--main-bg-color);
+
+}
+
+.userinfo_details{
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: var(--main-font);
+    font-weight: var(--main-weight);
+    font-size: 25px;
+
+
+
+}
+
+/* ADMIN PRIVILEGES */
+
+.crud {
+
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px solid black;
+    left: -2000px;
+    top: 100px;
+    align-items: center;
+    width: 1500px;
+    height: 1000px;
+    overflow-y: scroll;
+    z-index: 5;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+.users {
+
+    position: absolute;
+    background-color: white;
+    border-radius: 10px solid black;
+    left: -2000px;
+    top: 100px;
+    align-items: center;
+    width: 1500px;
+    height: 1000px;
+    overflow-y: scroll;
+    z-index: 5;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+
+.add_user {
+
+    position: absolute;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    gap: 15px;
+    border: 5px solid #000000;
+    border-radius: 15px;
+    padding: 10px;
+    width: 430px;
+    top: 150px;
+    left: -2000px;
+    z-index: 10;
+}
+
+.upd_pass {
+    position: absolute;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    gap: 15px;
+    border: 5px solid #000000;
+    border-radius: 15px;
+    padding: 10px;
+    width: 1245px;
+    height: 600px;
+    top: 59px;
+    left: 100px;
+    z-index: 10;
+}
+
+.upd_user {
+    position: absolute;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    gap: 15px;
+    border: 5px solid #000000;
+    border-radius: 15px;
+    padding: 10px;
+    width: 1245px;
+    height: 1000px;
+    top: 59px;
+    left: 100px;
+    z-index: 10;
+}
+
+.searched {
+    position: absolute;
+    background-color: white;
+    border-radius: 10px solid black;
+    left: 180px;
+    top: -300px;
+    align-items: center;
+    width: 1400px;
+    height: 1000px;
+    overflow-y: scroll;
+    z-index: 5;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.notifications {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #000000;
+    border-radius: 12px;
+    left: -2000px;
+    top: 100px;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 20px;
+}
+
+.add_notif {
+    position: absolute;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    gap: 15px;
+    border: 5px solid #000000;
+    border-radius: 15px;
+    padding: 10px;
+    width: 430px;
+    height: 500px;
+    top: 150px;
+    left: -2000px;
+    z-index: 10;
+}
+
+.notif_input {
+    border: 2px solid #000000; 
+    border-radius: 15px;
+    padding: 8px; 
+    width: 400px; 
+    height: 200px;
+    font-size: 15px; 
+    font-weight: var(--main-weight); 
+    color: #000000; 
+    display: block; 
+    resize: none; 
+    overflow-y: auto; 
+}
+
+
+.reports_user{
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px solid black;
+    left: 30000px;
+    top: 100px;
+    align-items: center;
+    width: 1500px;
+    height: 1000px;
+    overflow-y: scroll;
+    z-index: 5;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.reports_service{
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px solid black;
+    left: 30000px;
+    top: 100px;
+    align-items: center;
+    width: 1500px;
+    height: 1000px;
+    overflow-y: scroll;
+    z-index: 5;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+/* ====== USER INFORMATION ===== */
+
+.user_information {
+
+    position: absolute;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    gap: 15px;
+    border: 5px solid #000000;
+    border-radius: 15px;
+    padding: 10px;
+    width: 1245px;
+    height: 545px;
+    top: 59px;
+    left: 3000px;
+    z-index: 10;
+
+
+}
