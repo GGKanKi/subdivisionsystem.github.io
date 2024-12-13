@@ -1,10 +1,5 @@
-<?php include("/xamppp/htdocs/se2/backend/backend.php"); ?>
+<?php include ("/backend/backend.php"); ?>
 
-<p?php
-
-$password = "";
-
-?>
 
 
 <!DOCTYPE html>
