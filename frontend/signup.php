@@ -37,14 +37,18 @@
                         <input type="text" class="input__box" name="firstname" required autocomplete="off" placeholder="Enter Your First Name"  value="<?php echo $f_name?>" required>
                         <label>MIDDLE NAME</label>
                         <input type="text" class="input__box" name="midname" autocomplete="off" placeholder="Enter Your Middle Name" value="<?php echo $m_name?>" required>
-                        <label>AGE</label>
-                        <input type="text" class="input__box" name="bdate" autocomplete="off" placeholder="Enter Your Age" value="<?php echo $age?>" required>
+                       <label>BIRTHDAY</label>
+                        <input type="text" class="input__box" name="bdate" autocomplete="off" placeholder="Enter Your Birthday (mmddyyyy - 01011999)" value="<?php echo $age?>" required>
                         <label>EMAIL</label>
                         <input type="text" class="input__box" name="mail" autocomplete="off" placeholder="Enter Your E-mail email@email.com" value="<?php echo $contact?>" required>
                         <label>BLOCK AND LOT</label>
                         <input type="text" class="input__box" name="blklot" autocomplete="off" placeholder="Enter Your Block and Lot (ex. 1234)" value="<?php echo $blklot?>" required>
                         <label>PART IN THE HOUSE</label>
-                        <input type="text" class="input__box" name="part" autocomplete="off" placeholder="Member, Owner or Service(Ex. answer: owner)" value="<?php echo $part?>" required>
+                        <select class="input__box" name="part" required>
+                            <option value="member" <?php echo ($part == 'member') ? 'selected' : ''; ?>>Member</option>
+                            <option value="owner" <?php echo ($part == 'owner') ? 'selected' : ''; ?>>Owner</option>
+                            <option value="service" <?php echo ($part == 'service') ? 'selected' : ''; ?>>Service</option>
+                        </select>
                         <label>ADDRESS PROOF</label>
                         <input type="file", name="pdffile">
                     </div>
